@@ -37,7 +37,9 @@ const Contact = () => {
             </div>
             
             <CenterComponent2/>
-            <FollowMeSection/>
+            <div className="hidden md:block"> 
+                <FollowMeSection/>
+            </div>
           </div>
         </>
       )}

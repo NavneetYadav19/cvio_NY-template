@@ -1,0 +1,16 @@
+.loader {
+    height: 100vh; /* Adjust the height to make the line long */
+    width: 2px; /* Adjust the width of the line */
+    background-color: white;
+    animation: slide 1s linear infinite; /* Adjust the animation duration */
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  

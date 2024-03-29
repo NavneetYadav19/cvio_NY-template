@@ -1,0 +1,17 @@
+/* Add this CSS to your styles file, e.g., Cursor.css */
+.custom-cursor {
+    width: 25px;
+    height: 25px;
+    background-color: #7FFF00; /* Light green color */
+    border-radius: 50%; /* Create a circle */
+    position: fixed;
+    z-index: 9999; /* Ensure the cursor is on top of everything */
+    pointer-events: none; /* Allow clicks to pass through the cursor */
+    /* Position the cursor at the center of the screen */
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    /* Apply a smooth transition effect */
+    transition: left 0.1s ease, top 0.1s ease; /* Adjust the transition duration for slower dragging */
+  }
+  

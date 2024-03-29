@@ -1,0 +1,98 @@
+.center-component {
+    background-color: transparent; 
+    padding: 20px; 
+    text-align: center; 
+    position: relative;
+    top: 160px;
+    width: 100%; 
+    
+}
+
+/* Adjustments for the down arrow icon */
+.down-arrow {
+    position: absolute; 
+    bottom: 20px;
+    font-size: 24px;
+    color: white; 
+    cursor: pointer; 
+    animation: bounce 1.5s infinite; 
+}
+
+
+.sub-pages {
+    display: flex;
+    justify-content: center;
+}
+
+.sub-pages button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.sub-pages button.active {
+    font-weight: bold;
+}
+/* Styles for sub-page content */
+.sub-page-content {
+    margin-top: 20px;
+}
+
+/* Adjustments for images */
+.left-image {
+    width: 45%; 
+    margin-right: 5%; 
+    float: left; 
+    position: relative;
+    overflow: hidden; 
+}
+
+.right-image {
+    width: 45%; 
+    margin-left: 5%; 
+    float: right; 
+    position: relative;
+    overflow: hidden; 
+}
+
+/* Styles for the green color slide */
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: green; 
+    opacity: 0; 
+    transition: opacity 0.8s ease; /* Smooth transition */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.left-image:hover .image-overlay,
+.right-image:hover .image-overlay {
+    opacity: 0.8; /* Show the green color slide */
+}
+
+.left-image:hover .image-overlay p,
+.right-image:hover .image-overlay p {
+    top: 0; /* Slide the text to the center */
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-10px); 
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}

@@ -1,0 +1,36 @@
+/* Home.css */
+
+.home-content {
+    position: relative; /* Ensure the position is relative for absolute positioning */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center align horizontally */
+    align-items: center; /* Center align vertically */
+    height: 100vh; /* Set height to full viewport height */
+  }
+  
+  .typing-text {
+    color: white; /* Set text color to white */
+    font-size: 24px; /* Set font size */
+    overflow: hidden; /* Hide overflowing text */
+    white-space: nowrap; /* Prevent line breaks */
+    border-right: .15em solid green; /* Typing cursor */
+    animation: typing 6s steps(40, end), blink-caret .75s step-end infinite; /* Typing animation */
+  }
+
+  .contact-info {
+    position: fixed;
+    bottom: 10px;
+    margin: 82px;
+    left: 10px;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: green; }
+  }
+  

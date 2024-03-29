@@ -1,0 +1,18 @@
+/* Header.css */
+
+/* Sidebar styles */
+.text-white.open {
+    transform: translateX(0);
+  }
+  
+  /* Sidebar animation */
+  .text-white {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  @media (max-width: 767px) {
+    .text-white {
+      transform: translateX(-100%);
+    }
+  }
+  

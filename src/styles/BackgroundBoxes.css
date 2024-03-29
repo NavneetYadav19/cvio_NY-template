@@ -1,0 +1,60 @@
+/* BackgroundBoxes.css */
+
+.background-boxes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Move the background boxes behind other content */
+}
+
+.box {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  background-color: black; /* Set background color to black */
+}
+
+.box1 {
+  left: 0;
+  animation: slideBottom 1s ease-in-out;
+}
+
+.box2 {
+  left: 20%;
+  animation: slideTop 1s ease-in-out;
+}
+
+.box3 {
+  left: 40%;
+  animation: slideBottom 1s ease-in-out;
+}
+
+.box4 {
+  left: 60%;
+  animation: slideTop 1s ease-in-out;
+}
+
+.box5 {
+  left: 80%;
+  animation: slideBottom 1s ease-in-out;
+}
+
+@keyframes slideBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}

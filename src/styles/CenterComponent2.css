@@ -1,0 +1,50 @@
+/* CenterComponent2.css */
+
+.center-component2 {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    top: 160px;
+    width: 100%;
+}
+
+/* Adjustments for the down arrow icon */
+.down-arrow {
+    position: absolute;
+    bottom: 20px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    animation: bounce 1.5s infinite;
+}
+
+.up:hover,
+.up:focus {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+}
+
+.up {
+    --color: #1fd225;
+    --hover: #24d252;
+  }
+
+  .buttoncon {
+    color: var(--color);
+    transition: 0.25s;
+  }
+  .buttoncon:hover, .buttoncon:focus {
+    border-color: var(--hover);
+    color: #0d0d0d;
+  }
+
+  .buttoncon {
+    position: relative;
+    right: 270px;
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+  }
